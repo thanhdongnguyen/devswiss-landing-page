@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, Code } from "lucide-react";
+import { Download } from "lucide-react";
 import { ThemeLanguageSwitcher } from "@/components/ThemeLanguageSwitcher";
 import { useLanguage } from "@/providers/LanguageProvider";
 import { useState } from "react";
@@ -19,7 +19,13 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <Code size={28} className="text-dev-accent" />
+          <img 
+            src="/placeholder.svg" 
+            alt="DevTools Logo" 
+            width={28} 
+            height={28} 
+            className="text-dev-accent" 
+          />
           <span className="text-2xl font-bold text-gradient">DevTools</span>
         </div>
         <div className="flex items-center gap-4">
