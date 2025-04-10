@@ -18,7 +18,7 @@ const translations = {
     
     // Hero
     "hero.title": "Developer Toolbox Without Internet",
-    "hero.subtitle": "Essential development tools in a single application, delivering high efficiency without internet connection.",
+    "hero.subtitle": "Supercharge your development workflow with powerful offline tools designed to maximize productivity and efficiency.",
     "hero.download": "Download for macOS",
     "hero.macos-only": "macOS Only",
     
@@ -66,7 +66,7 @@ const translations = {
     
     // Hero
     "hero.title": "Bộ Công Cụ Hỗ Trợ Developer Không Cần Internet",
-    "hero.subtitle": "Các công cụ phát triển cần thiết trong một ứng dụng duy nhất, mang lại hiệu quả cao mà không cần kết nối mạng.",
+    "hero.subtitle": "Tăng tốc quy trình phát triển của bạn với các công cụ offline mạnh mẽ được thiết kế để tối đa hóa năng suất và hiệu quả làm việc.",
     "hero.download": "Tải xuống cho macOS",
     "hero.macos-only": "Chỉ hỗ trợ macOS",
     
