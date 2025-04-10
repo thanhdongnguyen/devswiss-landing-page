@@ -28,7 +28,8 @@ export function ThemeProvider({
     document.body.style.backgroundAttachment = "fixed";
   }, []);
 
-  const value = {
+  // Fix: Use the literal type "default" instead of a generic string
+  const value: ThemeProviderState = {
     theme: "default",
   };
 
