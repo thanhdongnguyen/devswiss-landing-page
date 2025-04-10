@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { ThemeLanguageSwitcher } from "@/components/ThemeLanguageSwitcher";
@@ -12,7 +13,13 @@ const Navbar = () => {
   return <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img alt="DevTools Logo" width={28} height={28} className="text-dev-accent" src="/lovable-uploads/719d5f6f-5b3e-49e4-bacd-9fc8bfefb15e.png" />
+          <img 
+            alt="DevTools Logo" 
+            width={36} 
+            height={36} 
+            className="rounded-lg object-cover shadow-md" 
+            src="/lovable-uploads/719d5f6f-5b3e-49e4-bacd-9fc8bfefb15e.png" 
+          />
           <span className="text-2xl font-bold text-gradient">DevTools</span>
         </div>
         <div className="flex items-center gap-4">
