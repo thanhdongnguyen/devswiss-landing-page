@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Github, Apple } from "lucide-react";
 
-const Download = () => {
+const DownloadSection = () => {
   return (
     <div className="py-20 px-4">
       <div className="container mx-auto">
@@ -17,18 +17,18 @@ const Download = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Button size="lg" className="bg-dev-accent hover:bg-dev-accent/90 text-white px-8 py-6 h-auto">
-              <Download size={20} className="mr-2" />
+              <Download className="mr-2" size={20} />
               Tải xuống v1.0.0
             </Button>
             <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/5 px-8 py-6 h-auto">
-              <Github size={20} className="mr-2" />
+              <Github className="mr-2" size={20} />
               Source Code
             </Button>
           </div>
           
           <div className="flex items-center justify-center text-gray-400 gap-4">
             <div className="flex items-center">
-              <Apple size={16} className="mr-1" />
+              <Apple className="mr-1" size={16} />
               <span>macOS 10.15+</span>
             </div>
             <span>•</span>
@@ -40,4 +40,4 @@ const Download = () => {
   );
 };
 
-export default Download;
+export default DownloadSection;
