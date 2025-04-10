@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useState } from "react";
 
 export type Language = "en" | "vi";
@@ -17,7 +16,7 @@ const translations = {
     "nav.download": "Download",
     
     // Hero
-    "hero.title": "DevKit Offline",
+    "hero.title": "DevTools For Developer",
     "hero.subtitle": "Supercharge your development workflow with powerful offline tools designed to maximize productivity and efficiency.",
     "hero.download": "Download for macOS",
     "hero.macos-only": "macOS Only",
@@ -65,7 +64,7 @@ const translations = {
     "nav.download": "Tải xuống",
     
     // Hero
-    "hero.title": "DevKit Offline",
+    "hero.title": "DevTools For Developer",
     "hero.subtitle": "Tăng tốc quy trình phát triển của bạn với các công cụ offline mạnh mẽ được thiết kế để tối đa hóa năng suất và hiệu quả làm việc.",
     "hero.download": "Tải xuống cho macOS",
     "hero.macos-only": "Chỉ hỗ trợ macOS",
