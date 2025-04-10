@@ -71,7 +71,8 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-hero': 'linear-gradient(135deg, #0A1929 0%, #2D1B69 100%)',
-				'gradient-card': 'linear-gradient(90deg, rgba(10,25,41,0.7) 0%, rgba(45,27,105,0.7) 100%)',
+				'gradient-card-dark': 'linear-gradient(90deg, rgba(10,25,41,0.7) 0%, rgba(45,27,105,0.7) 100%)',
+				'gradient-card-light': 'linear-gradient(90deg, rgba(248,250,252,0.7) 0%, rgba(224,231,255,0.7) 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

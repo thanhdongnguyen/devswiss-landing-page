@@ -1,37 +1,39 @@
 
 import { Button } from "@/components/ui/button";
 import { Download, Apple } from "lucide-react";
+import { useLanguage } from "@/providers/LanguageProvider";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center pt-16 pb-24 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gradient leading-tight">
-          Bộ Công Cụ Hỗ Trợ Developer <br/> Không Cần Internet
+          {t("hero.title")}
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Các công cụ phát triển cần thiết trong một ứng dụng duy nhất, 
-          mang lại hiệu quả cao mà không cần kết nối mạng.
+        <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-300 light:text-gray-700 mb-8 max-w-3xl mx-auto">
+          {t("hero.subtitle")}
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <Button size="lg" className="bg-dev-accent hover:bg-dev-accent/90 text-white px-8 py-6 h-auto">
             <Download size={20} className="mr-2" />
-            Tải xuống cho macOS
+            {t("hero.download")}
           </Button>
           <div className="text-gray-400 flex items-center">
             <Apple size={20} className="mr-1" />
-            <span>Chỉ hỗ trợ macOS</span>
+            <span>{t("hero.macos-only")}</span>
           </div>
         </div>
         
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-t from-dev-blue to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
           <div className="glass-card rounded-2xl overflow-hidden animate-float p-1 shadow-xl">
             <img 
               src="https://placehold.co/1200x675/0A1929/FFFFFF?text=DevToolbox+Screenshot" 
               alt="DevToolbox Interface" 
-              className="rounded-xl border border-white/10"
+              className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10"
             />
           </div>
         </div>

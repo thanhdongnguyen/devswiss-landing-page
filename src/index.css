@@ -5,34 +5,57 @@
 
 @layer base {
   :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 252 94% 67%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 252 94% 67%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
     --background: 222 47% 11%;
     --foreground: 0 0% 98%;
-
     --card: 222 47% 11%;
     --card-foreground: 0 0% 98%;
-
     --popover: 222 47% 11%;
     --popover-foreground: 0 0% 98%;
-
     --primary: 252 94% 67%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 222 47% 25%;
     --secondary-foreground: 0 0% 98%;
-
     --muted: 222 47% 18%;
     --muted-foreground: 215 20.2% 75.1%;
-
     --accent: 252 94% 67%;
     --accent-foreground: 0 0% 100%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 240 3.7% 25.9%;
     --input: 240 3.7% 25.9%;
     --ring: 252 94% 67%;
-
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
@@ -52,9 +75,17 @@
   }
 
   body {
-    @apply bg-dev-blue text-foreground antialiased;
+    @apply text-foreground antialiased;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  body.dark {
     background: linear-gradient(to bottom right, #0A1929, #2D1B69);
+    background-attachment: fixed;
+  }
+  
+  body.light {
+    background: linear-gradient(to bottom right, #f8fafc, #e0e7ff);
     background-attachment: fixed;
   }
 
@@ -65,10 +96,26 @@
 
 @layer utilities {
   .glass-card {
-    @apply bg-gradient-card backdrop-blur-lg border border-white/10 shadow-lg;
+    @apply backdrop-blur-lg border shadow-lg;
+  }
+  
+  .dark .glass-card {
+    @apply bg-gradient-card-dark border-white/10;
+  }
+  
+  .light .glass-card {
+    @apply bg-gradient-card-light border-black/10;
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-white via-dev-light-purple to-dev-accent bg-clip-text text-transparent;
+    @apply bg-clip-text text-transparent;
+  }
+  
+  .dark .text-gradient {
+    @apply bg-gradient-to-r from-white via-dev-light-purple to-dev-accent;
+  }
+  
+  .light .text-gradient {
+    @apply bg-gradient-to-r from-dev-blue via-dev-purple to-dev-accent;
   }
 }
