@@ -1,39 +1,22 @@
-
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { ThemeLanguageSwitcher } from "@/components/ThemeLanguageSwitcher";
 import { useLanguage } from "@/providers/LanguageProvider";
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 const Navbar = () => {
-  const { t } = useLanguage();
+  const {
+    t
+  } = useLanguage();
   const [changelogOpen, setChangelogOpen] = useState(false);
-  
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10">
+  return <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img 
-            src="/placeholder.svg" 
-            alt="DevTools Logo" 
-            width={28} 
-            height={28} 
-            className="text-dev-accent" 
-          />
+          <img alt="DevTools Logo" width={28} height={28} className="text-dev-accent" src="/lovable-uploads/719d5f6f-5b3e-49e4-bacd-9fc8bfefb15e.png" />
           <span className="text-2xl font-bold text-gradient">DevTools</span>
         </div>
         <div className="flex items-center gap-4">
-          <Button 
-            variant="ghost" 
-            className="hover:text-dev-accent hover:bg-background/5"
-            onClick={() => setChangelogOpen(true)}
-          >
+          <Button variant="ghost" className="hover:text-dev-accent hover:bg-background/5" onClick={() => setChangelogOpen(true)}>
             {t("nav.changelog")}
           </Button>
           <Button variant="ghost" className="hover:text-dev-accent hover:bg-background/5">
@@ -77,8 +60,6 @@ const Navbar = () => {
           </div>
         </DialogContent>
       </Dialog>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navbar;
