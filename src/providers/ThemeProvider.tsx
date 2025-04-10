@@ -1,42 +1,35 @@
 
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
-
-type Theme = "dark" | "light";
-
-type ThemeProviderProps = {
-  children: React.ReactNode;
-  defaultTheme?: Theme;
-};
+import { createContext, useContext, useEffect } from "react";
 
 type ThemeProviderState = {
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
+  theme: "default";
 };
 
 const initialState: ThemeProviderState = {
-  theme: "dark",
-  setTheme: () => null,
+  theme: "default",
 };
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({
   children,
-  defaultTheme = "dark",
-}: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
-
+}: {
+  children: React.ReactNode;
+}) {
   useEffect(() => {
     const root = window.document.documentElement;
     root.classList.remove("light", "dark");
-    root.classList.add(theme);
-  }, [theme]);
+    root.classList.add("default");
+    
+    // Apply gradient background to body
+    document.body.style.background = "linear-gradient(to bottom right, #0A1929, #2D1B69)";
+    document.body.style.backgroundAttachment = "fixed";
+  }, []);
 
   const value = {
-    theme,
-    setTheme: (theme: Theme) => setTheme(theme),
+    theme: "default",
   };
 
   return (

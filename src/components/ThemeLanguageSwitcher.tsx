@@ -1,8 +1,6 @@
 
-import { Moon, Sun, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import { useTheme } from "@/providers/ThemeProvider";
 import { useLanguage, Language } from "@/providers/LanguageProvider";
 import { useState } from "react";
 import {
@@ -11,26 +9,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
-export function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-
-  return (
-    <Button 
-      variant="ghost" 
-      size="icon"
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="text-foreground"
-    >
-      {theme === "light" ? (
-        <Moon className="h-5 w-5" />
-      ) : (
-        <Sun className="h-5 w-5" />
-      )}
-      <span className="sr-only">Toggle theme</span>
-    </Button>
-  );
-}
 
 export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
@@ -70,7 +48,6 @@ export function LanguageToggle() {
 export function ThemeLanguageSwitcher() {
   return (
     <div className="flex items-center gap-2">
-      <ThemeToggle />
       <LanguageToggle />
     </div>
   );

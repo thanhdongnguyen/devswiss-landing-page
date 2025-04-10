@@ -1,3 +1,4 @@
+
 import { createContext, useContext, useState } from "react";
 
 export type Language = "en" | "vi";
@@ -11,7 +12,7 @@ type LanguageContextType = {
 const translations = {
   en: {
     // Navbar
-    "nav.features": "Features",
+    "nav.changelog": "Change logs",
     "nav.tools": "Tools",
     "nav.download": "Download",
     
@@ -36,7 +37,7 @@ const translations = {
     "features.snippets.desc": "Library of code snippets for various programming languages.",
     "features.hash": "Hash Generator",
     "features.hash.desc": "Generate MD5, SHA-1, SHA-256 and other hashes.",
-    "features.why": "Why Choose DevToolbox?",
+    "features.why": "Why Choose DevTools?",
     "features.offline": "Works Offline",
     "features.offline.desc": "Work anytime, anywhere without internet connection.",
     "features.time": "Save Time",
@@ -45,7 +46,7 @@ const translations = {
     "features.security.desc": "Your data is always processed locally, never sent anywhere.",
     
     // Download
-    "download.title": "Download DevToolbox Now",
+    "download.title": "Download DevTools Now",
     "download.subtitle": "Experience the complete toolset for developers running on macOS. Download and use it today!",
     "download.button": "Download v1.0.0",
     "download.source": "Source Code",
@@ -54,12 +55,12 @@ const translations = {
     
     // Footer
     "footer.slogan": "Essential toolbox for developers.",
-    "footer.copyright": "© 2025 DevToolbox",
+    "footer.copyright": "© 2025 DevTools",
     "footer.made": "Made with love by Developer, for Developers"
   },
   vi: {
     // Navbar
-    "nav.features": "Tính năng",
+    "nav.changelog": "Lịch sử cập nhật",
     "nav.tools": "Công cụ",
     "nav.download": "Tải xuống",
     
@@ -84,7 +85,7 @@ const translations = {
     "features.snippets.desc": "Thư viện code snippets cho nhiều ngôn ngữ lập trình khác nhau.",
     "features.hash": "Hash Generator",
     "features.hash.desc": "Tạo các hash MD5, SHA-1, SHA-256 và nhiều loại khác.",
-    "features.why": "Tại Sao Chọn DevToolbox?",
+    "features.why": "Tại Sao Chọn DevTools?",
     "features.offline": "Hoạt Động Offline",
     "features.offline.desc": "Làm việc mọi lúc, mọi nơi không cần kết nối internet.",
     "features.time": "Tiết Kiệm Thời Gian",
@@ -93,7 +94,7 @@ const translations = {
     "features.security.desc": "Dữ liệu của bạn luôn được xử lý cục bộ, không gửi đi đâu cả.",
     
     // Download
-    "download.title": "Tải DevToolbox Ngay",
+    "download.title": "Tải DevTools Ngay",
     "download.subtitle": "Trải nghiệm bộ công cụ hoàn chỉnh cho developer chạy trên macOS. Tải về và sử dụng ngay hôm nay!",
     "download.button": "Tải xuống v1.0.0",
     "download.source": "Source Code",
@@ -102,7 +103,7 @@ const translations = {
     
     // Footer
     "footer.slogan": "Bộ công cụ không thể thiếu cho developer.",
-    "footer.copyright": "© 2025 DevToolbox",
+    "footer.copyright": "© 2025 DevTools",
     "footer.made": "Made with love by Developer, for Developers"
   }
 };
