@@ -114,8 +114,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 5s ease-in-out infinite',
-				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
-				'gradient-text': 'gradient-text 3s ease infinite'
+				'pulse-slow': 'pulse-slow 6s ease-in-out infinite', // Changed from 3s to 6s for slower pulse
+				'gradient-text': 'gradient-text 8s ease infinite' // Changed from 3s to 8s for consistency
 			}
 		}
 	},
