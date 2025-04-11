@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <span className="text-xl font-bold text-gradient">DevToolbox</span>
+            <span className="text-xl font-bold text-gradient">DevSwiss</span>
             <p className="text-gray-400 mt-2">{t("footer.slogan")}</p>
           </div>
           

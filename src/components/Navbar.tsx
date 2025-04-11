@@ -14,13 +14,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <img 
-            alt="DevTools Logo" 
+            alt="DevSwiss Logo" 
             width={36} 
             height={36} 
             className="rounded-lg object-cover shadow-md" 
             src="/lovable-uploads/719d5f6f-5b3e-49e4-bacd-9fc8bfefb15e.png" 
           />
-          <span className="text-2xl font-bold text-gradient">DevTools</span>
+          <span className="text-2xl font-bold text-gradient">DevSwiss</span>
         </div>
         <div className="flex items-center gap-4">
           <Button variant="ghost" className="hover:text-dev-accent hover:bg-background/5" onClick={() => setChangelogOpen(true)}>

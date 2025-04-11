@@ -17,7 +17,7 @@ const translations = {
     "nav.download": "Download",
     
     // Hero
-    "hero.title": "DevTools For Developer",
+    "hero.title": "DevSwiss For Developer",
     "hero.subtitle": "Supercharge your development workflow with powerful offline tools designed to maximize productivity and efficiency.",
     "hero.download": "Download for macOS",
     "hero.macos-only": "macOS Only",
@@ -37,7 +37,7 @@ const translations = {
     "features.snippets.desc": "Library of code snippets for various programming languages.",
     "features.hash": "Hash Generator",
     "features.hash.desc": "Generate MD5, SHA-1, SHA-256 and other hashes.",
-    "features.why": "Why Choose DevTools?",
+    "features.why": "Why Choose DevSwiss?",
     "features.offline": "Works Offline",
     "features.offline.desc": "Work anytime, anywhere without internet connection.",
     "features.time": "Save Time",
@@ -46,7 +46,7 @@ const translations = {
     "features.security.desc": "Your data is always processed locally, never sent anywhere.",
     
     // Download
-    "download.title": "Download DevTools Now",
+    "download.title": "Download DevSwiss Now",
     "download.subtitle": "Experience the complete toolset for developers running on macOS. Download and use it today!",
     "download.button": "Download v1.0.0",
     "download.source": "Source Code",
@@ -55,7 +55,7 @@ const translations = {
     
     // Footer
     "footer.slogan": "Essential toolbox for developers.",
-    "footer.copyright": "© 2025 DevTools",
+    "footer.copyright": "© 2025 DevSwiss",
     "footer.made": "Made with love by Developer, for Developers"
   },
   vi: {
@@ -65,7 +65,7 @@ const translations = {
     "nav.download": "Tải xuống",
     
     // Hero
-    "hero.title": "DevTools For Developer",
+    "hero.title": "DevSwiss For Developer",
     "hero.subtitle": "Tăng tốc quy trình phát triển của bạn với các công cụ offline mạnh mẽ được thiết kế để tối đa hóa năng suất và hiệu quả làm việc.",
     "hero.download": "Tải xuống cho macOS",
     "hero.macos-only": "Chỉ hỗ trợ macOS",
@@ -85,7 +85,7 @@ const translations = {
     "features.snippets.desc": "Thư viện code snippets cho nhiều ngôn ngữ lập trình khác nhau.",
     "features.hash": "Hash Generator",
     "features.hash.desc": "Tạo các hash MD5, SHA-1, SHA-256 và nhiều loại khác.",
-    "features.why": "Tại Sao Chọn DevTools?",
+    "features.why": "Tại Sao Chọn DevSwiss?",
     "features.offline": "Hoạt Động Offline",
     "features.offline.desc": "Làm việc mọi lúc, mọi nơi không cần kết nối internet.",
     "features.time": "Tiết Kiệm Thời Gian",
@@ -94,7 +94,7 @@ const translations = {
     "features.security.desc": "Dữ liệu của bạn luôn được xử lý cục bộ, không gửi đi đâu cả.",
     
     // Download
-    "download.title": "Tải DevTools Ngay",
+    "download.title": "Tải DevSwiss Ngay",
     "download.subtitle": "Trải nghiệm bộ công cụ hoàn chỉnh cho developer chạy trên macOS. Tải về và sử dụng ngay hôm nay!",
     "download.button": "Tải xuống v1.0.0",
     "download.source": "Source Code",
@@ -103,7 +103,7 @@ const translations = {
     
     // Footer
     "footer.slogan": "Bộ công cụ không thể thiếu cho developer.",
-    "footer.copyright": "© 2025 DevTools",
+    "footer.copyright": "© 2025 DevSwiss",
     "footer.made": "Made with love by Developer, for Developers"
   }
 };
