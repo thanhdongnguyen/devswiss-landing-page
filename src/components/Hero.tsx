@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center pt-24 pb-24 px-4">
       <div className="max-w-5xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gradient leading-tight mt-16">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-gradient-text leading-tight mt-16">
           {t("hero.title")}
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-300 light:text-gray-700 mb-8 max-w-3xl mx-auto">

@@ -103,6 +103,11 @@ export default {
 				'pulse-slow': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.8' },
+				},
+				'gradient-text': {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' },
 				}
 			},
 			animation: {
@@ -110,6 +115,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 5s ease-in-out infinite',
 				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
+				'gradient-text': 'gradient-text 3s ease infinite'
 			}
 		}
 	},
