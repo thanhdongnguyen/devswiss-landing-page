@@ -1,9 +1,10 @@
 
 import { 
   Code, Database, QrCode, KeyRound, Codepen, Zap, 
-  Wifi, Clock, Shield 
+  Wifi, Clock, Shield, PlusCircle
 } from "lucide-react";
 import { useLanguage } from "@/providers/LanguageProvider";
+import { Button } from "@/components/ui/button";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -70,6 +71,19 @@ const Features = () => {
             titleKey="features.hash"
             descriptionKey="features.hash.desc"
           />
+        </div>
+        
+        <div className="mt-12 text-center">
+          <div className="glass-card rounded-xl p-6 max-w-3xl mx-auto">
+            <div className="flex items-center justify-center mb-4">
+              <PlusCircle size={32} className="text-dev-accent mr-3" />
+              <h3 className="text-xl font-semibold">{t("features.more.title")}</h3>
+            </div>
+            <p className="text-gray-300 mb-6">{t("features.more.desc")}</p>
+            <Button variant="outline" className="border-dev-accent/50 text-dev-accent hover:bg-dev-accent/10">
+              {t("features.more.button")}
+            </Button>
+          </div>
         </div>
         
         <div className="max-w-3xl mx-auto mt-20 text-center">
