@@ -1,6 +1,4 @@
 
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 import { useLanguage } from "@/providers/LanguageProvider";
 
 const Hero = () => {
@@ -12,16 +10,9 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-gradient-text leading-tight mt-16">
           {t("hero.title")}
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-300 light:text-gray-700 mb-8 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-300 light:text-gray-700 mb-12 max-w-3xl mx-auto">
           {t("hero.subtitle")}
         </p>
-        
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <Button size="lg" className="bg-dev-accent hover:bg-dev-accent/90 text-white px-8 py-6 h-auto">
-            <Download size={20} className="mr-2" />
-            {t("hero.download")}
-          </Button>
-        </div>
         
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
