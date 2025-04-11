@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, Apple, Check } from "lucide-react";
+import { Download, Check } from "lucide-react";
 import { useLanguage } from "@/providers/LanguageProvider";
 import { Badge } from "@/components/ui/badge";
 
@@ -26,10 +26,6 @@ const Hero = () => {
             <Badge variant="default" className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-3 py-1 rounded-full animate-pulse-slow shadow-lg">
               <Check size={14} className="mr-1" /> {t("hero.free")}
             </Badge>
-          </div>
-          <div className="text-gray-400 flex items-center">
-            <Apple size={20} className="mr-1" />
-            <span>{t("hero.macos-only")}</span>
           </div>
         </div>
         
