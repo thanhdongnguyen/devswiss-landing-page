@@ -18,13 +18,13 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center relative">
             <Button size="lg" className="bg-dev-accent hover:bg-dev-accent/90 text-white px-8 py-6 h-auto">
               <Download size={20} className="mr-2" />
               {t("hero.download")}
             </Button>
-            <Badge variant="outline" className="mt-2 bg-green-500/10 text-green-400 border-green-500/30">
-              <Check size={12} className="mr-1" /> {t("hero.free")}
+            <Badge variant="default" className="mt-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-3 py-1 rounded-full animate-pulse-slow shadow-lg">
+              <Check size={14} className="mr-1" /> {t("hero.free")}
             </Badge>
           </div>
           <div className="text-gray-400 flex items-center">
