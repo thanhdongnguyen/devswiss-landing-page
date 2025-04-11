@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useState } from "react";
 
 export type Language = "en" | "vi";
@@ -21,6 +20,7 @@ const translations = {
     "hero.subtitle": "Supercharge your development workflow with powerful offline tools designed to maximize productivity and efficiency.",
     "hero.download": "Download for macOS",
     "hero.macos-only": "macOS Only",
+    "hero.free": "100% Free",
     
     // Features
     "features.title": "All Tools You Need",
@@ -72,12 +72,13 @@ const translations = {
     "hero.subtitle": "Tăng tốc quy trình phát triển của bạn với các công cụ offline mạnh mẽ được thiết kế để tối đa hóa năng suất và hiệu quả làm việc.",
     "hero.download": "Tải xuống cho macOS",
     "hero.macos-only": "Chỉ hỗ trợ macOS",
+    "hero.free": "Hoàn Toàn Miễn Phí",
     
     // Features
     "features.title": "Tất Cả Công Cụ Bạn Cần",
     "features.subtitle": "Bộ công cụ tích hợp các tiện ích cần thiết cho developer, hoạt động hoàn toàn offline trên macOS.",
     "features.base64": "Base64 Encode/Decode",
-    "features.base64.desc": "Mã hóa và giải mã Base64 nhanh chóng cho chuỗi và tập tin của bạn.",
+    "features.base64.desc": "Mã hóa và giải mã Base64 nhanh chóng cho chu���i và tập tin của bạn.",
     "features.qrcode": "QR Code Generator",
     "features.qrcode.desc": "Tạo mã QR cho URLs, văn bản, danh thiếp và nhiều loại dữ liệu khác.",
     "features.uuid": "UUID/ULID Generator",
