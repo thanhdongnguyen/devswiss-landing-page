@@ -1,8 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, Check } from "lucide-react";
+import { Download } from "lucide-react";
 import { useLanguage } from "@/providers/LanguageProvider";
-import { Badge } from "@/components/ui/badge";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -18,15 +17,10 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <div className="flex items-center gap-3">
-            <Button size="lg" className="bg-dev-accent hover:bg-dev-accent/90 text-white px-8 py-6 h-auto">
-              <Download size={20} className="mr-2" />
-              {t("hero.download")}
-            </Button>
-            <Badge variant="default" className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-3 py-1 rounded-full animate-pulse-slow shadow-lg">
-              <Check size={14} className="mr-1" /> {t("hero.free")}
-            </Badge>
-          </div>
+          <Button size="lg" className="bg-dev-accent hover:bg-dev-accent/90 text-white px-8 py-6 h-auto">
+            <Download size={20} className="mr-2" />
+            {t("hero.download")}
+          </Button>
         </div>
         
         <div className="relative">
