@@ -21,7 +21,7 @@ const Hero = () => {
           {t("hero.subtitle")}
         </p>
         
-        <div className="relative w-full max-w-4xl mx-auto">
+        <div className="relative w-full max-w-3xl mx-auto">
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
           <div className="glass-card rounded-2xl overflow-hidden p-1 shadow-xl">
             <Carousel 
@@ -39,7 +39,7 @@ const Hero = () => {
                     <img 
                       src="/lovable-uploads/719d5f6f-5b3e-49e4-bacd-9fc8bfefb15e.png" 
                       alt="DevSwiss Interface - Dashboard" 
-                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto"
+                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto max-h-[450px] object-contain"
                     />
                   </div>
                 </CarouselItem>
@@ -50,7 +50,7 @@ const Hero = () => {
                     <img 
                       src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
                       alt="DevSwiss Interface - Code Tools" 
-                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto"
+                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto max-h-[450px] object-contain"
                     />
                   </div>
                 </CarouselItem>
@@ -61,7 +61,7 @@ const Hero = () => {
                     <img 
                       src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
                       alt="DevSwiss Interface - Encoding Tools" 
-                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto"
+                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto max-h-[450px] object-contain"
                     />
                   </div>
                 </CarouselItem>
@@ -72,7 +72,7 @@ const Hero = () => {
                     <img 
                       src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                       alt="DevSwiss Interface - Generator Tools" 
-                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto"
+                      className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto max-h-[450px] object-contain"
                     />
                   </div>
                 </CarouselItem>
