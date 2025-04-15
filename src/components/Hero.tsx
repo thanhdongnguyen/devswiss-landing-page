@@ -1,3 +1,4 @@
+
 import { useLanguage } from "@/providers/LanguageProvider";
 import {
   Carousel,
@@ -77,7 +78,7 @@ const Hero = () => {
         </p>
         
         <div 
-          className="relative w-full max-w-3xl mx-auto mt-8"
+          className="relative w-full max-w-4xl mx-auto mt-8" // Expanded max-w from 3xl to 4xl
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           ref={carouselRef}
@@ -88,7 +89,7 @@ const Hero = () => {
               opts={{
                 align: "start",
                 loop: true,
-                direction: "rtl" // Right to left direction
+                direction: "rtl"
               }}
               className="w-full"
             >
