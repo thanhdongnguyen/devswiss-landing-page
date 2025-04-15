@@ -68,7 +68,7 @@ const Hero = () => {
   }, [isPaused]);
   
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start py-8 px-4">
+    <div className="pt-24 min-h-[calc(100vh-4rem)] flex flex-col items-center justify-start py-8 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate-gradient-text leading-tight">
           {t("hero.title")}
