@@ -7,9 +7,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
   const { t } = useLanguage();
+  const [isPaused, setIsPaused] = useState(false);
+  const carouselRef = useRef<HTMLDivElement>(null);
   
   // Demo screenshots array for easier management
   const demoScreenshots = [
@@ -43,6 +46,27 @@ const Hero = () => {
     }
   ];
   
+  // Auto-slide effect with hover pause
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    let interval: NodeJS.Timeout;
+    
+    const startAutoSlide = () => {
+      interval = setInterval(() => {
+        if (!isPaused && carousel) {
+          const nextButton = carousel.querySelector('[data-carousel-next]') as HTMLButtonElement;
+          if (nextButton) nextButton.click();
+        }
+      }, 2000); // Slide every 2 seconds
+    };
+    
+    startAutoSlide();
+    
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isPaused]);
+  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center pt-24 pb-24 px-4">
       <div className="max-w-5xl mx-auto text-center">
@@ -53,7 +77,12 @@ const Hero = () => {
           {t("hero.subtitle")}
         </p>
         
-        <div className="relative w-full max-w-3xl mx-auto">
+        <div 
+          className="relative w-full max-w-3xl mx-auto"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          ref={carouselRef}
+        >
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
           <div className="glass-card rounded-2xl overflow-hidden p-1 shadow-xl">
             <Carousel 
@@ -78,8 +107,8 @@ const Hero = () => {
                 ))}
               </CarouselContent>
               
-              <CarouselPrevious className="left-4 bg-background/70 hover:bg-background/90 border-white/10" />
-              <CarouselNext className="right-4 bg-background/70 hover:bg-background/90 border-white/10" />
+              <CarouselPrevious className="left-4 bg-background/70 hover:bg-background/90 border-white/10" data-carousel-prev />
+              <CarouselNext className="right-4 bg-background/70 hover:bg-background/90 border-white/10" data-carousel-next />
             </Carousel>
           </div>
         </div>
