@@ -68,12 +68,12 @@ const Hero = () => {
   }, [isPaused]);
   
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center pt-24 pb-24 px-4">
+    <div className="min-h-screen flex flex-col items-center justify-start py-8 px-4">
       <div className="max-w-5xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-gradient-text leading-tight mt-16">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate-gradient-text leading-tight">
           {t("hero.title")}
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-300 light:text-gray-700 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-300 dark:text-gray-300 light:text-gray-700 mb-6 max-w-3xl mx-auto">
           {t("hero.subtitle")}
         </p>
         
@@ -100,7 +100,7 @@ const Hero = () => {
                       <img 
                         src={screenshot.src} 
                         alt={screenshot.alt} 
-                        className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto max-h-[450px] object-contain"
+                        className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto max-h-[350px] object-contain"
                       />
                     </div>
                   </CarouselItem>
