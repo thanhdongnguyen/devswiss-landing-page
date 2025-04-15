@@ -1,4 +1,3 @@
-
 import { useLanguage } from "@/providers/LanguageProvider";
 import {
   Carousel,
@@ -78,7 +77,7 @@ const Hero = () => {
         </p>
         
         <div 
-          className="relative w-full max-w-3xl mx-auto"
+          className="relative w-full max-w-3xl mx-auto mt-8"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           ref={carouselRef}
@@ -100,7 +99,7 @@ const Hero = () => {
                       <img 
                         src={screenshot.src} 
                         alt={screenshot.alt} 
-                        className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-auto max-h-[350px] object-contain"
+                        className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-[500px] object-cover"
                       />
                     </div>
                   </CarouselItem>
