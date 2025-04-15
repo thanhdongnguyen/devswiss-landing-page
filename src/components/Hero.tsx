@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
           <div className="glass-card rounded-2xl overflow-hidden animate-float p-1 shadow-xl">
             <img 
-              src="https://placehold.co/1200x675/0A1929/FFFFFF?text=DevSwiss+Screenshot" 
+              src="/lovable-uploads/719d5f6f-5b3e-49e4-bacd-9fc8bfefb15e.png" 
               alt="DevSwiss Interface" 
               className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10"
             />
