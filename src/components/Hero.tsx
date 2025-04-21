@@ -17,32 +17,32 @@ const Hero = () => {
   // Demo screenshots array for easier management
   const demoScreenshots = [
     {
-      src: "/lovable-uploads/719d5f6f-5b3e-49e4-bacd-9fc8bfefb15e.png",
-      alt: "DevSwiss Interface - Dashboard"
+      src: "/lovable-uploads/1.png",
+      alt: "DevSwiss Interface - Home"
     },
     {
-      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      alt: "DevSwiss Interface - Code Tools"
+      src: "/lovable-uploads/2.png",
+      alt: "DevSwiss Interface - Base 64 encode/decode"
     },
     {
-      src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      alt: "DevSwiss Interface - Encoding Tools"
+      src: "/lovable-uploads/3.png",
+      alt: "DevSwiss Interface - JWT Tools"
     },
     {
-      src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      alt: "DevSwiss Interface - Generator Tools"
+      src: "/lovable-uploads/4.png",
+      alt: "DevSwiss Interface - Cron Tools"
     },
     {
-      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      alt: "DevSwiss Interface - Development Environment"
+      src: "/lovable-uploads/5.png",
+      alt: "DevSwiss Interface - PGP Tools"
     },
     {
-      src: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      alt: "DevSwiss Interface - Circuit Tools"
+      src: "/lovable-uploads/6.png",
+      alt: "DevSwiss Interface - Text Diff Tools"
     },
     {
-      src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      alt: "DevSwiss Interface - Remote Work"
+      src: "/lovable-uploads/7.png",
+      alt: "DevSwiss Interface - Image Tools"
     }
   ];
   
