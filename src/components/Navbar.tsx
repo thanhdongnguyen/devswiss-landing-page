@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink } from "lucide-react";
+import { Download } from "lucide-react";
 import { ThemeLanguageSwitcher } from "@/components/ThemeLanguageSwitcher";
 import { useLanguage } from "@/providers/LanguageProvider";
 import { useState } from "react";
@@ -11,7 +11,6 @@ const Navbar = () => {
   const [changelogOpen, setChangelogOpen] = useState(false);
   
   const downloadLink = "https://github.com/thanhdongnguyen/devswiss-landing-page/releases/download/v1.0.0/DevSwiss-1.0.0.dmg";
-  const productHuntLink = "https://www.producthunt.com/posts/devswiss";
 
   return <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -26,20 +25,8 @@ const Navbar = () => {
           <span className="text-2xl font-bold text-gradient">DevSwiss</span>
         </div>
         <div className="flex items-center gap-4">
-          <Button 
-            variant="ghost" 
-            className="hover:text-dev-accent hover:bg-background/5" 
-            onClick={() => setChangelogOpen(true)}
-          >
+          <Button variant="ghost" className="hover:text-dev-accent hover:bg-background/5" onClick={() => setChangelogOpen(true)}>
             {t("nav.changelog")}
-          </Button>
-          <Button 
-            variant="ghost" 
-            className="hover:text-dev-accent hover:bg-background/5" 
-            onClick={() => window.open(productHuntLink, '_blank')}
-          >
-            <ExternalLink size={16} className="mr-2" />
-            Product Hunt
           </Button>
           <ThemeLanguageSwitcher />
           <Button 
@@ -112,3 +99,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
