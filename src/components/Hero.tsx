@@ -78,7 +78,7 @@ const Hero = () => {
         </p>
         
         <div 
-          className="relative w-full max-w-4xl mx-auto mt-8" // Expanded max-w from 3xl to 4xl
+          className="relative w-full max-w-4xl mx-auto mt-8"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           ref={carouselRef}
@@ -89,18 +89,17 @@ const Hero = () => {
               opts={{
                 align: "start",
                 loop: true,
-                direction: "rtl"
               }}
               className="w-full"
             >
               <CarouselContent>
                 {demoScreenshots.map((screenshot, index) => (
-                  <CarouselItem key={index}>
+                  <CarouselItem key={index} className="basis-full">
                     <div className="p-1">
                       <img 
                         src={screenshot.src} 
                         alt={screenshot.alt} 
-                        className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-[500px] object-cover"
+                        className="rounded-xl border border-white/10 dark:border-white/10 light:border-black/10 w-full h-[500px] object-contain"
                       />
                     </div>
                   </CarouselItem>
