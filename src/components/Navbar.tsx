@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { ThemeLanguageSwitcher } from "@/components/ThemeLanguageSwitcher";
@@ -8,6 +9,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 const Navbar = () => {
   const { t } = useLanguage();
   const [changelogOpen, setChangelogOpen] = useState(false);
+  
+  const downloadLink = "https://github.com/thanhdongnguyen/devswiss-landing-page/releases/download/v1.0.0/DevSwiss-1.0.0.dmg";
+
   return <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
@@ -25,7 +29,11 @@ const Navbar = () => {
             {t("nav.changelog")}
           </Button>
           <ThemeLanguageSwitcher />
-          <Button className="bg-dev-accent hover:bg-dev-accent/90" size="sm">
+          <Button 
+            className="bg-dev-accent hover:bg-dev-accent/90" 
+            size="sm"
+            onClick={() => window.open(downloadLink, '_blank')}
+          >
             <Download size={16} className="mr-2" />
             {t("nav.download")}
           </Button>

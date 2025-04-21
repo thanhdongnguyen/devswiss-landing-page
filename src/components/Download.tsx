@@ -6,6 +6,8 @@ import { useLanguage } from "@/providers/LanguageProvider";
 const DownloadSection = () => {
   const { t } = useLanguage();
   
+  const downloadLink = "https://github.com/thanhdongnguyen/devswiss-landing-page/releases/download/v1.0.0/DevSwiss-1.0.0.dmg";
+
   return (
     <div className="py-20 px-4">
       <div className="container mx-auto">
@@ -18,7 +20,11 @@ const DownloadSection = () => {
           </p>
           
           <div className="flex justify-center mb-8">
-            <Button size="lg" className="bg-dev-accent hover:bg-dev-accent/90 text-white px-10 py-6 h-auto">
+            <Button 
+              size="lg" 
+              className="bg-dev-accent hover:bg-dev-accent/90 text-white px-10 py-6 h-auto"
+              onClick={() => window.open(downloadLink, '_blank')}
+            >
               <Download className="mr-2" size={20} />
               {t("download.button")}
             </Button>
