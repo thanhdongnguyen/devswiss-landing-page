@@ -1,4 +1,3 @@
-
 import { useLanguage } from "@/providers/LanguageProvider";
 import {
   Carousel,
@@ -7,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ExternalLink } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
@@ -76,6 +76,25 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-gray-300 dark:text-gray-300 light:text-gray-700 mb-6 max-w-3xl mx-auto">
           {t("hero.subtitle")}
         </p>
+        
+        {/* Product Hunt Badge */}
+        <div className="flex justify-center items-center mb-6">
+          <a 
+            href="https://www.producthunt.com/posts/devswiss?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-devswiss" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center hover:opacity-80 transition-opacity"
+          >
+            <img 
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=956063&theme=light&t=1745256305635" 
+              alt="DevSwiss - Offline toolkit for developers | Product Hunt" 
+              width="250" 
+              height="54" 
+              className="w-[250px] h-[54px]"
+            />
+            <ExternalLink size={16} className="ml-2 text-muted-foreground" />
+          </a>
+        </div>
         
         <div 
           className="relative w-full max-w-4xl mx-auto mt-8"
