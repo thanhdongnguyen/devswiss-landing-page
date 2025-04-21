@@ -54,7 +54,7 @@ const translations = {
     "download.button": "Download v1.0.0",
     "download.source": "Source Code",
     "download.macos": "macOS 10.15+",
-    "download.size": "Size: 15MB",
+    "download.size": "Size: 236MB",
     
     // Footer
     "footer.slogan": "Essential toolbox for developers.",
@@ -106,7 +106,7 @@ const translations = {
     "download.button": "Tải xuống v1.0.0",
     "download.source": "Source Code",
     "download.macos": "macOS 10.15+",
-    "download.size": "Dung lượng: 15MB",
+    "download.size": "Dung lượng: 236MB",
     
     // Footer
     "footer.slogan": "Bộ công cụ không thể thiếu cho developer.",
