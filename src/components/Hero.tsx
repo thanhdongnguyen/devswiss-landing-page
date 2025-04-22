@@ -1,3 +1,4 @@
+
 import { useLanguage } from "@/providers/LanguageProvider";
 import {
   Carousel,
@@ -78,7 +79,8 @@ const Hero = () => {
         </p>
         
         {/* Product Hunt Badge */}
-        <div className="flex justify-center items-center mb-6">
+        <div className="flex justify-center items-center mb-6 space-x-4">
+          {/* Product Hunt Link */}
           <a 
             href="https://www.producthunt.com/posts/devswiss?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-devswiss" 
             target="_blank" 
@@ -91,6 +93,21 @@ const Hero = () => {
               width="250" 
               height="54" 
               className="w-[250px] h-[54px]"
+            />
+            <ExternalLink size={16} className="ml-2 text-muted-foreground" />
+          </a>
+
+          {/* Buy Me a Coffee Link */}
+          <a 
+            href="https://buymeacoffee.com/nguyenthanqf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center hover:opacity-80 transition-opacity"
+          >
+            <img 
+              src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=☕&slug=nguyenthanqf&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" 
+              alt="Buy Me a Coffee" 
+              className="w-[170px] h-[50px]"
             />
             <ExternalLink size={16} className="ml-2 text-muted-foreground" />
           </a>
@@ -136,3 +153,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
