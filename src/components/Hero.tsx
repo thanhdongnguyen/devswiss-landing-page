@@ -1,4 +1,3 @@
-
 import { useLanguage } from "@/providers/LanguageProvider";
 import {
   Carousel,
@@ -78,7 +77,7 @@ const Hero = () => {
           {t("hero.subtitle")}
         </p>
         
-        {/* Product Hunt Badge */}
+        {/* Product Hunt and Buy Me a Coffee Badges */}
         <div className="flex justify-center items-center mb-6 space-x-4">
           {/* Product Hunt Link */}
           <a 
@@ -107,7 +106,9 @@ const Hero = () => {
             <img 
               src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=☕&slug=nguyenthanqf&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" 
               alt="Buy Me a Coffee" 
-              className="w-[170px] h-[50px]"
+              width="250" 
+              height="54" 
+              className="w-[250px] h-[54px]"
             />
             <ExternalLink size={16} className="ml-2 text-muted-foreground" />
           </a>
@@ -153,4 +154,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
